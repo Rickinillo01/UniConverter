@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UniConvert — Conversor de Unidades Online</title>
+    <meta name="description" content="Conversor de unidades online gratuito. Convierte longitud, peso, temperatura, volumen, velocidad y área de forma rápida y precisa.">
+    <meta name="keywords" content="conversor de unidades, convertir unidades, calculadora de conversión, longitud, peso, temperatura">
+    <meta name="author" content="UniConvert">
+    <meta name="theme-color" content="#6C63FF">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="UniConvert — Conversor de Unidades Online">
+    <meta property="og:description" content="Convierte cualquier unidad de forma rápida y precisa. Longitud, peso, temperatura y más.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Converter Layer (visible by default) -->
+        <div id="converter-layer" class="layer active">
+            <!-- Populated by converter.js -->
+        </div>
+
+        <!-- Chat Layer (hidden, revealed by secret sequence) -->
+        <div id="chat-layer" class="layer">
+            <!-- Auth and Chat views are injected here -->
+            <div id="auth-view" class="hidden">
+                <!-- Populated by auth.js -->
+            </div>
+            <div id="chat-view" class="hidden">
+                <!-- Populated by chat.js -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
